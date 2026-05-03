@@ -1,0 +1,215 @@
+/* ========== SUCCESS SECTION ========== */
+.success-section {
+    background: linear-gradient(145deg, var(--card-bg), rgba(2, 6, 23, 0.95));
+    border: 3px solid var(--success);
+    border-radius: 30px;
+    padding: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: none;
+}
+
+.success-section.active {
+    display: block;
+    animation: fadeIn 0.6s ease;
+}
+
+.success-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--success), #16a34a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 40px;
+    font-size: 50px;
+    color: white;
+    animation: successPulse 2s infinite;
+}
+
+@keyframes successPulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+    50% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(34, 197, 94, 0); }
+}
+
+.report-id {
+    background: rgba(34, 197, 94, 0.15);
+    border: 2px solid var(--success);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 40px auto;
+    max-width: 600px;
+}
+
+.report-id h4 {
+    color: var(--light);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.id-display {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    color: var(--success);
+    font-weight: 900;
+    letter-spacing: 3px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* ========== RECENT REPORTS SECTION ========== */
+.recent-reports {
+    background: linear-gradient(145deg, var(--card-bg), rgba(2, 6, 23, 0.95));
+    border: 3px solid var(--warning);
+    border-radius: 30px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.report-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(245, 158, 11, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    transition: all 0.4s ease;
+}
+
+.report-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--warning);
+    box-shadow: 0 15px 30px rgba(245, 158, 11, 0.2);
+}
+
+.report-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.report-type {
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.report-type.banking { background: rgba(239, 68, 68, 0.2); color: var(--danger); }
+.report-type.investment { background: rgba(245, 158, 11, 0.2); color: var(--warning); }
+.report-type.romance { background: rgba(124, 58, 237, 0.2); color: var(--primary); }
+.report-type.tech { background: rgba(6, 182, 212, 0.2); color: var(--accent); }
+
+.report-time {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.report-content {
+    color: #c7d2fe;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.report-platforms {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.platform-tag {
+    padding: 5px 15px;
+    background: rgba(124, 58, 237, 0.15);
+    border-radius: 12px;
+    font-size: 12px;
+    color: #a5b4fc;
+}
+
+/* ========== STATS VISUALIZATION ========== */
+.stats-section {
+    background: linear-gradient(145deg, var(--card-bg), rgba(2, 6, 23, 0.95));
+    border: 3px solid var(--accent);
+    border-radius: 30px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.stat-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(6, 182, 212, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.chart-container {
+    height: 250px;
+    margin-top: 20px;
+}
+
+/* ========== RESOURCES SECTION ========== */
+.resources-section {
+    background: linear-gradient(145deg, var(--card-bg), rgba(2, 6, 23, 0.95));
+    border: 3px solid var(--primary);
+    border-radius: 30px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.resource-card {
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(124, 58, 237, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+    box-shadow: 0 15px 30px rgba(124, 58, 237, 0.2);
+}
+
+.resource-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    background: rgba(124, 58, 237, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 30px;
+    color: var(--primary);
+}

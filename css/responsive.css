@@ -1,0 +1,140 @@
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 1200px) {
+    .main-container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    .hero-title {
+        font-size: 42px;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    .top-navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        justify-content: flex-start;
+    }
+    
+    .nav-link {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .main-container {
+        margin-top: 160px;
+    }
+    
+    .hero-section {
+        padding: 40px;
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .progress-steps {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .step-connector {
+        width: 3px;
+        height: 40px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .hero-stat {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .form-section {
+        padding: 30px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .nav-btn {
+        padding: 15px 30px;
+        font-size: 15px;
+        min-width: 150px;
+    }
+    
+    .reports-grid,
+    .stats-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .option-group {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section,
+    .form-section,
+    .success-section,
+    .recent-reports,
+    .stats-section,
+    .resources-section {
+        padding: 30px;
+        border-radius: 20px;
+    }
+    
+    .hero-title {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .form-navigation {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .nav-btn {
+        width: 100%;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-link span {
+        display: none;
+    }
+    
+    .nav-link i {
+        font-size: 20px;
+    }
+    
+    .nav-link {
+        padding: 12px;
+    }
+}
